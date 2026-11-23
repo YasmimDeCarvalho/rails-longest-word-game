@@ -1,0 +1,14 @@
+<h1>Your Score</h1>
+
+<% if @valid_word %>
+  <div class= "alert alert-success" >
+    <p>Congratulations! <%= @word %> is a valid word!</p>
+  </div>
+<% else %>
+  <div class="alert alert-danger">
+    <p>Sorry! <%= @word %> is not a valid word.</p>
+  </div>
+<% end %>
+
+
+<%= link_to "New word",  new_path , class: "btn btn-primary"%>
